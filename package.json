@@ -1,10 +1,11 @@
 {
   "name": "basic-express-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "1. We create a new repository at GitHub, called (basic-express-server).    - Then select the “Add a README” option.    - Then select the “Add a .gitignore” option, and choose Node.js.    - Then choose the MIT license. 2. Deploy THE branch to `Heroku`. 3. Choose “GitHub” 4. Started to build our server like the demo to check if the routes is working. 5. we build the test file so we can `TDD` our code. 6. The link for Heroku applications, Github actions and the pull request. 7. Choose the “enable automatic deploys” option",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --coverage --verbose",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
   "dependencies": {
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "jest": "^28.1.0"
+    "jest": "^28.1.0",
+    "supertest": "^6.2.3"
   }
 }
